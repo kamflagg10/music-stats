@@ -1,0 +1,16 @@
+.song {
+  display: flex;
+  gap: 2rem;
+  background-color: crimson;
+}
+
+.songInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+img {
+  height: 5rem;
+  width: 5rem;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Song from './Song';
+import './SongList.css';
 
 const SongList = () => {
   const [songs, setSongs] = useState([]);
@@ -16,10 +17,14 @@ const SongList = () => {
   const songsMap = songs.map((song) => {
     console.log(song);
     return (
-      <Song key={song._id} name={song.trackName} artist={song.artistName} />
+      <Song
+        key={song._id}
+        name={song.master_metadata_track_name}
+        artist={song.master_metadata_album_artist_name}
+      />
     );
   });
-  return <div>{!!songsMap.length && songsMap}</div>;
+  return <div className="songList">{!!songsMap.length && songsMap}</div>;
 };
 
 export default SongList;
