@@ -9,8 +9,11 @@ const port = 3000;
 app.use(cors());
 
 app.get('/', async (req, res) => {
-  let collection = await db.collection('streaming');
-  let results = await collection.find({}).limit(5).toArray();
+  let collection = await db.collection('history2023');
+  let results = await collection
+    .find({ master_metadata_album_artist_name: 'USHER' })
+    .limit(5)
+    .toArray();
   res.send({ results: results }).status(200);
 });
 
