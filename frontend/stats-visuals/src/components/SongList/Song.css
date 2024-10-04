@@ -2,6 +2,9 @@
   display: flex;
   gap: 2rem;
   background-color: crimson;
+  width: 50%;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
 }
 
 .songInfo {
@@ -13,4 +16,5 @@
 img {
   height: 5rem;
   width: 5rem;
+  align-self: center;
 }
