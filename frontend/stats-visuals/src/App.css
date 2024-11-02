@@ -1,5 +1,7 @@
 .App {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .option {
@@ -11,5 +13,10 @@
 }
 
 .songsContainer {
+  align-self: center;
   margin-top: 2rem;
+  width: 75%;
+  border-radius: 1rem;
+  background-color: rgb(25, 141, 176, 50%);
+  /* opacity: 50%; */
 }
